@@ -1,0 +1,304 @@
+/* ----------------------------------------------------
+   1. RESET MINIMAL
+---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------
+   2. BASE GLOBALE
+---------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* (Optionnel) Logo */
+.logo {
+  height: 60px; /* Taille du logo */
+}
+
+/* ----------------------------------------------------
+   3. NAVBAR
+---------------------------------------------------- */
+nav.navbar {
+  background-color: white;
+}
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+  color: #4b5968 !important;
+  font-weight: 500;
+}
+nav.navbar .nav-link:hover {
+  color: #5d6d7e !important;
+}
+
+/* ----------------------------------------------------
+   4. HERO SECTION (Page d'accueil)
+---------------------------------------------------- */
+.hero-section {
+  background: url("/images/hero2.jpg") center/cover no-repeat;
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero-section .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+}
+.hero-section .hero-overlay h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-section .hero-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+/* Bouton "hero" */
+.btn-hero {
+  background-color: #5d6d7e; 
+  border-color: #5d6d7e;
+  color: #fff;
+}
+.btn-hero:hover {
+  background-color: #4b5968;
+  border-color: #4b5968;
+  color: #fff;
+}
+
+/* ----------------------------------------------------
+   5. HERO DU PROJET (Page projet)
+---------------------------------------------------- */
+.hero-project {
+  position: relative;
+  background: url("images/batiment-1.jpg") center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-project-overlay {
+  /* Différencie l’overlay du projet de l’overlay d’accueil */
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-content {
+  /* Contenu au-dessus de l’overlay */
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+/* Bouton du hero-projet */
+.hero-content .btn {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.hero-content .btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* ----------------------------------------------------
+   6. SECTIONS GLOBALES
+---------------------------------------------------- */
+/* Conteneur principal pour une mise en avant (ex.: page projet) */
+.section-container {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin-top: -3rem; /* pour recouvrir partiellement le hero */
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 3; 
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ----------------------------------------------------
+   7. SECTION À PROPOS
+---------------------------------------------------- */
+#apropos {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+.about-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ----------------------------------------------------
+   8. SECTION SERVICES
+---------------------------------------------------- */
+#services .border {
+  border-color: #ccc !important;
+}
+#services .text-primary {
+  color: #5d6d7e !important; 
+}
+#services h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* ----------------------------------------------------
+   9. SECTION PROJETS (CARROUSEL)
+---------------------------------------------------- */
+#projets {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+.projet {
+  height: 50vh;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+/* Overlay sombre pour les images du carrousel */
+.caption-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.caption-overlay h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+/* Boutons du carrousel */
+.carousel-caption a.btn {
+  border-color: #fff;
+  color: #fff;
+}
+.carousel-caption a.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ----------------------------------------------------
+   10. SECTION TÉMOIGNAGES
+---------------------------------------------------- */
+#temoignages {
+  padding: 3rem 0;
+}
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* ----------------------------------------------------
+   11. SECTION CONTACT
+---------------------------------------------------- */
+#contact {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+#contact .form-label {
+  font-weight: 600;
+}
+#contact .btn-outline-dark {
+  border-color: #2c3e50;
+  color: #2c3e50;
+}
+#contact .btn-outline-dark:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* ----------------------------------------------------
+   12. PIED DE PAGE
+---------------------------------------------------- */
+footer {
+  background-color: #f8f9fa;
+}
+footer span,
+footer a.text-body-secondary {
+  color: #666 !important;
+}
+/* Variante "footer-light" */
+.footer-light {
+  background-color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.footer-light span {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ----------------------------------------------------
+   13. GALERIE (optionnel)
+---------------------------------------------------- */
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------------
+   14. RESPONSIVE TWEAKS
+---------------------------------------------------- */
+@media (max-width: 576px) {
+  /* Hero (projet) */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .section-container {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  /* Overlay du carrousel */
+  .caption-overlay {
+    top: auto;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 0.5rem 1rem;
+  }
+  .caption-overlay h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn.btn-lg {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
