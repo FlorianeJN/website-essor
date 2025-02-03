@@ -22,8 +22,17 @@
 
   <!-- Styles internes -->
   <style>
+    /* Variables CSS pour une gestion facilitée des couleurs */
+    :root {
+      --primary-color: #333;
+      --background-light: #f0f0f0;
+      --background-white: #fff;
+      --accent-color: #007bff;
+      --overlay-light: rgba(0, 0, 0, 0.4);
+    }
+
     /* RESET MINIMAL */
-    * {
+    *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -32,12 +41,13 @@
     /* Base globale */
     body {
       font-family: 'Open Sans', sans-serif;
-      color: #333;
-      background-color: #f0f0f0;
+      color: var(--primary-color);
+      background-color: var(--background-light);
+      line-height: 1.6;
     }
 
     /* HERO DU PROJET */
-    .hero-project {
+    header.hero-project {
       position: relative;
       background: url("images/batiment-1.jpg") center/cover no-repeat;
       min-height: 60vh;
@@ -45,50 +55,50 @@
       align-items: center;
       justify-content: center;
     }
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.4);
+    header.hero-project .hero-overlay {
+      background-color: var(--overlay-light);
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0; 
       left: 0;
     }
-    .hero-content {
+    header.hero-project .hero-content {
       position: relative;
       z-index: 2; /* Au-dessus de l’overlay */
       text-align: center;
       color: #fff;
       padding: 2rem;
     }
-    .hero-content h1 {
+    header.hero-project .hero-content h1 {
       font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
-    .hero-content p {
+    header.hero-project .hero-content p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
     }
-    /* Bouton du hero */
-    .hero-content .btn {
+    header.hero-project .hero-content .btn {
       border: 2px solid #fff;
       color: #fff;
+      transition: background-color 0.3s, color 0.3s;
     }
-    .hero-content .btn:hover {
+    header.hero-project .hero-content .btn:hover {
       background-color: #fff;
-      color: #333;
+      color: var(--primary-color);
     }
 
     /* SECTION PRINCIPALE */
-    .section-container {
-      background-color: #fff;
+    main .section-container {
+      background-color: var(--background-white);
       border-radius: 0.5rem;
       box-shadow: 0 0 15px rgba(0,0,0,0.07);
       padding: 2rem;
       margin-top: -3rem; /* Pour remonter un peu sous le hero */
       margin-bottom: 2rem;
       position: relative;
-      z-index: 3; /* Au-dessus du hero overlay */
+      z-index: 3; /* Au-dessus de l'overlay du hero */
     }
     .section-title {
       font-size: 1.8rem;
@@ -100,32 +110,32 @@
     /* GALERIE */
     .project-gallery img {
       width: 100%;
-      height: auto;      /* Respecte le ratio original */
+      height: auto; /* Respecte le ratio original */
       border-radius: 0.5rem;
       object-fit: cover;
     }
 
     /* PIED DE PAGE LÉGER */
-    .footer-light {
-      background-color: #fff;
+    footer.footer-light {
+      background-color: var(--background-white);
       padding: 1rem 0;
       text-align: center;
       border-top: 1px solid #ddd;
     }
-    .footer-light span {
+    footer.footer-light span {
       color: #aaa;
       font-size: 0.9rem;
     }
 
     /* RESPONSIVE */
     @media (max-width: 576px) {
-      .hero-content h1 {
+      header.hero-project .hero-content h1 {
         font-size: 1.8rem;
       }
-      .hero-content p {
+      header.hero-project .hero-content p {
         font-size: 1rem;
       }
-      .section-container {
+      main .section-container {
         margin-top: 0; 
         border-radius: 0; 
       }
@@ -133,87 +143,130 @@
   </style>
 </head>
 <body>
+  <!-- HERO - Détails du Projet -->
+  <header class="hero-project" role="banner">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Construction d'appartements à Tiassalé</h1>
+      <p>Un projet moderne pour répondre aux besoins résidentiels de la région.</p>
+      <a href="index.html#projets" class="btn btn-lg" role="button">Retour à l'accueil</a>
+    </div>
+  </header>
 
-<!-- HERO - Détails du Projet -->
-<div class="hero-project">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Construction d'appartements à Tiassalé</h1>
-    <p>Un projet moderne pour répondre aux besoins résidentiels de la région.</p>
-    <a href="index.html#projets" class="btn btn-lg">Retour à l'accueil</a>
-  </div>
-</div>
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <!-- SECTION DÉTAILS DU PROJET -->
+    <section class="container section-container" aria-labelledby="details-projet">
+      <h2 id="details-projet" class="section-title">Détails du Projet</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <h5>Description Générale</h5>
+          <p>
+            Situé dans la commune de Tiassalé, ce projet vise à construire un ensemble 
+            d’appartements modernes et abordables, tout en respectant l’environnement 
+            local et en favorisant le développement urbain.
+          </p>
+          <h5>Caractéristiques Principales</h5>
+          <ul>
+            <li>Appartements de 2 à 4 pièces</li>
+            <li>Parkings et espaces verts intégrés</li>
+            <li>Matériaux écologiques et durables</li>
+            <li>Infrastructures modernes (électricité, eau, fibre optique)</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img 
+            src="images/chantier-2.jpg" 
+            alt="Aperçu du chantier du projet à Tiassalé" 
+            class="img-fluid rounded-3"
+          >
+        </div>
+      </div>
+    </section>
 
-<!-- SECTION PRINCIPALE (Détails du Projet) -->
-<div class="container section-container">
-  <h2 class="section-title">Détails du Projet</h2>
-  <div class="row g-4 align-items-center">
-    <div class="col-md-6">
-      <h5>Description Générale</h5>
-      <p>
-        Situé dans la commune de Tiassalé, ce projet vise à construire un ensemble 
-        d’appartements modernes et abordables, tout en respectant l’environnement 
-        local et en favorisant le développement urbain.
+    <!-- SECTION GALERIE -->
+    <section class="container section-container project-gallery" aria-labelledby="galerie">
+      <h2 id="galerie" class="section-title">Galerie du Chantier</h2>
+      <p class="text-center mb-4">Découvrez l'avancée des travaux et les différentes étapes de la construction.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="images/chantier.jpg" alt="Photo du chantier 1">
+        </div>
+        <div class="col-md-4">
+          <img src="images/chantier.jpg" alt="Photo du chantier 2">
+        </div>
+        <div class="col-md-4">
+          <img src="images/chantier.jpg" alt="Photo du chantier 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT / CTA -->
+    <section class="container section-container" aria-labelledby="contact-projet">
+      <h2 id="contact-projet" class="section-title">Intéressé par ce projet ?</h2>
+      <p class="text-center">
+        Contactez-nous pour plus d’informations, planifier une visite ou discuter 
+        de vos besoins en logement.
       </p>
-      <h5>Caractéristiques Principales</h5>
-      <ul>
-        <li>Appartements de 2 à 4 pièces</li>
-        <li>Parkings et espaces verts intégrés</li>
-        <li>Matériaux écologiques et durables</li>
-        <li>Infrastructures modernes (électricité, eau, fibre optique)</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <img 
-        src="images/chantier-2.jpg" 
-        alt="Projet Tiassalé" 
-        class="img-fluid rounded-3"
-      >
-    </div>
-  </div>
-</div>
+      <div class="text-center">
+        <a href="index.html#contact" class="btn btn-outline-dark btn-lg" role="button">
+          Nous Contacter
+        </a>
+      </div>
+    </section>
+  </main>
 
-<!-- SECTION GALERIE (OPTIONNEL) -->
-<div class="container section-container project-gallery">
-  <h2 class="section-title">Galerie du Chantier</h2>
-  <p class="text-center mb-4">Découvrez l'avancée des travaux et les différentes étapes de la construction.</p>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <img src="images/chantier.jpg" alt="Chantier 1" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <img src="images/chantier.jpg" alt="Chantier 2" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <img src="images/chantier.jpg" alt="Chantier 3" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-<!-- SECTION CONTACT OU CTA -->
-<div class="container section-container">
-  <h2 class="section-title">Intéressé par ce projet ?</h2>
-  <p class="text-center">
-    Contactez-nous pour plus d’informations, planifier une visite ou discuter 
-    de vos besoins en logement.
-  </p>
-  <div class="text-center">
-    <a href="index.html#contact" class="btn btn-outline-dark btn-lg">
-      Nous Contacter
-    </a>
-  </div>
-</div>
-
-<!-- PIED DE PAGE LÉGER -->
-<footer class="footer-light">
+ 
+<!-- Footer -->
+<footer class="bg-white py-4 mt-5 border-top">
   <div class="container">
-    <span>© 2025 Essor Solidaire - Tous droits réservés</span>
+    <div class="row align-items-center">
+      <!-- Branding & Logo -->
+      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <a href="/" class="d-inline-flex align-items-center text-decoration-none">
+
+          
+        </a>
+        <p class="small text-muted mb-0">&copy; 2025 Essor Solidaire. Tous droits réservés.</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+
+        <p class="small text-muted mb-0">
+          <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
+          <i class="bi bi-envelope me-1"></i> contact@essorsolidaireciv.com
+        </p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-md-4 text-center text-md-end">
+
+        <ul class="list-unstyled d-inline-flex mb-0">
+          <li class="ms-3">
+            <a class="text-dark" href="#">
+              <i class="bi bi-twitter fs-5"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-dark" href="#">
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-dark" href="#">
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
 
-<!-- Bootstrap 5 JS (CDN) -->
-<script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-</script>
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
