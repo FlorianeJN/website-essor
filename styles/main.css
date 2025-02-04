@@ -21,6 +21,11 @@ body {
   height: 60px; /* Taille du logo */
 }
 
+section[id] {
+  scroll-margin-top: 80px; /* Adjust this value to match your navbar height */
+}
+
+
 /* ----------------------------------------------------
    3. NAVBAR
 ---------------------------------------------------- */
@@ -41,7 +46,7 @@ nav.navbar .nav-link:hover {
 ---------------------------------------------------- */
 .hero-section {
   background: url("/images/hero2.jpg") center/cover no-repeat;
-  min-height: 85vh;
+  min-height: 95vh;
   position: relative;
   display: flex;
   align-items: center;
