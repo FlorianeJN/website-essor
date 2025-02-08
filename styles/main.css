@@ -94,7 +94,6 @@ nav.navbar .nav-link.active::after {
    4. HERO SECTION (Page d'accueil)
 ---------------------------------------------------- */
 .hero-section {
-  background: url("/images/hero2.jpg") center/cover no-repeat;
   min-height: 96vh;
   position: relative;
   display: flex;
