@@ -16,29 +16,78 @@ body {
   background-color: #f0f0f0;
 }
 
-/* (Optionnel) Logo */
+/* Logo */
 .logo {
   height: 60px; /* Taille du logo */
 }
 
 section[id] {
-  scroll-margin-top: 80px; /* Adjust this value to match your navbar height */
+  scroll-margin-top: 80px; 
 }
 
 
 /* ----------------------------------------------------
-   3. NAVBAR
+   3. NAVBAR - Improved Styling
 ---------------------------------------------------- */
 nav.navbar {
   background-color: white;
+  padding: 0.75rem 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-nav.navbar .navbar-brand,
+
+/* Navbar Brand */
+nav.navbar .navbar-brand {
+  color: #2c3e50 !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+/* Navbar Links */
 nav.navbar .nav-link {
-  color: #4b5968 !important;
+  color: #000 !important;
   font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
+
+/* Hover Effect */
 nav.navbar .nav-link:hover {
-  color: #5d6d7e !important;
+  color: #000 !important;
+}
+
+/* Active Link Indicator */
+nav.navbar .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #2c3e50;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+nav.navbar .nav-link:hover::after,
+nav.navbar .nav-link.active::after {
+  width: 60%;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
 }
 
 /* ----------------------------------------------------
@@ -46,7 +95,7 @@ nav.navbar .nav-link:hover {
 ---------------------------------------------------- */
 .hero-section {
   background: url("/images/hero2.jpg") center/cover no-repeat;
-  min-height: 95vh;
+  min-height: 96vh;
   position: relative;
   display: flex;
   align-items: center;
