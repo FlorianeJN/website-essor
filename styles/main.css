@@ -1,6 +1,107 @@
 /* ----------------------------------------------------
    1. RESET MINIMAL
 ---------------------------------------------------- */
+
+
+/* ===============================
+   ANIMATION KEYFRAMES
+================================ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   BASE CLASSES FOR FADE/SLIDE
+================================ */
+
+/* 1) Fade In (no movement) */
+.fade-in {
+  opacity: 0; /* hidden by default */
+}
+.fade-in.appear {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* 2) Fade In Up */
+.fade-in-up {
+  opacity: 0;
+}
+.fade-in-up.appear {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* 3) Fade In Left */
+.fade-in-left {
+  opacity: 0;
+}
+.fade-in-left.appear {
+  animation: fadeInLeft 0.8s ease forwards;
+}
+
+/* 4) Fade In Right */
+.fade-in-right {
+  opacity: 0;
+}
+.fade-in-right.appear {
+  animation: fadeInRight 0.8s ease forwards;
+}
+
+
+/* Class to prepare the element for animation */
+.fade-in {
+  opacity: 0;              /* Hidden by default */
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Class applied when element is in the viewport */
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.8s ease forwards; 
+  /* You can remove `animation` line if you prefer only transitions */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -139,14 +240,6 @@ nav.navbar .nav-link.active::after {
 /* ----------------------------------------------------
    5. HERO DU PROJET (Page projet)
 ---------------------------------------------------- */
-.hero-project {
-  position: relative;
-  background: url("images/batiment-1.jpg") center/cover no-repeat;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .hero-project-overlay {
   /* Différencie l’overlay du projet de l’overlay d’accueil */
   background-color: rgba(0, 0, 0, 0.4);
