@@ -21,8 +21,8 @@ body {
   height: 60px; /* Taille du logo */
 }
 
-section[id] {
-  scroll-margin-top: 80px; 
+#apropos, #services, #projets, #contact {
+  scroll-margin-top: 120px;
 }
 
 
@@ -42,8 +42,6 @@ nav.navbar .navbar-brand {
   font-size: 1.4rem;
   transition: color 0.3s ease-in-out;
 }
-
-
 
 /* Navbar Links */
 nav.navbar .nav-link {
@@ -89,6 +87,21 @@ nav.navbar .nav-link.active::after {
 .navbar-toggler:active {
   box-shadow: none;
 }
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.card-text.text-justify {
+  text-align: justify !important;
+  text-justify: inter-word !important; /* Optionnel (partiellement supporté) */
+  -webkit-hyphens: auto !important;
+  -moz-hyphens: auto !important;
+  -ms-hyphens: auto !important;
+  hyphens: auto !important;
+  overflow-wrap: break-word !important; /* ou word-wrap: break-word; */
+}
+
 
 /* Ajoute une transition sur l’opacité du conteneur de la question */
 #criterionQuestion {
@@ -148,7 +161,6 @@ nav.navbar .nav-link.active::after {
   justify-content: center;
 }
 .hero-project-overlay {
-  /* Différencie l’overlay du projet de l’overlay d’accueil */
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -157,7 +169,6 @@ nav.navbar .nav-link.active::after {
   left: 0;
 }
 .hero-content {
-  /* Contenu au-dessus de l’overlay */
   position: relative;
   z-index: 2; 
   text-align: center;
@@ -186,13 +197,12 @@ nav.navbar .nav-link.active::after {
 /* ----------------------------------------------------
    6. SECTIONS GLOBALES
 ---------------------------------------------------- */
-/* Conteneur principal pour une mise en avant (ex.: page projet) */
 .section-container {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0 15px rgba(0,0,0,0.07);
   padding: 2rem;
-  margin-top: -3rem; /* pour recouvrir partiellement le hero */
+  margin-top: -3rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 3; 
@@ -216,6 +226,15 @@ nav.navbar .nav-link.active::after {
 .about-img {
   max-width: 100%;
   border-radius: 8px;
+}
+.profile-img {
+  width: 125px !important;
+  height: 125px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.fw-bold {
+  font-weight: 600;
 }
 
 /* ----------------------------------------------------
@@ -245,7 +264,6 @@ nav.navbar .nav-link.active::after {
   object-fit: cover;
   object-position: center;
 }
-/* Overlay sombre pour les images du carrousel */
 .caption-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
@@ -255,7 +273,6 @@ nav.navbar .nav-link.active::after {
   color: #fff;
   margin-bottom: 1rem;
 }
-/* Boutons du carrousel */
 .carousel-caption a.btn {
   border-color: #fff;
   color: #fff;
@@ -306,7 +323,6 @@ footer span,
 footer a.text-body-secondary {
   color: #666 !important;
 }
-/* Variante "footer-light" */
 .footer-light {
   background-color: #fff;
   padding: 1rem 0;
@@ -326,14 +342,12 @@ footer a.text-body-secondary {
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
-  
 }
 
 /* ----------------------------------------------------
    14. RESPONSIVE TWEAKS
 ---------------------------------------------------- */
 @media (max-width: 576px) {
-  /* Hero (projet) */
   .hero-content h1 {
     font-size: 1.8rem;
   }
@@ -344,7 +358,6 @@ footer a.text-body-secondary {
     margin-top: 0;
     border-radius: 0;
   }
-  /* Overlay du carrousel */
   .caption-overlay {
     top: auto;
     bottom: 1rem;
@@ -360,5 +373,77 @@ footer a.text-body-secondary {
   .btn.btn-lg {
     font-size: 0.875rem;
     padding: 0.4rem 0.8rem;
+  }
+}
+
+/* ----------------------------------------------------
+   15. ANIMATIONS DE CHARGEMENT
+   NOUVELLES VERSIONS + .visible
+---------------------------------------------------- */
+/* Classe de base avant l'apparition */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(60px) scale(0.94);
+  transition: transform 0.75s cubic-bezier(0.25, 0.75, 0.5, 1),
+              opacity 0.75s ease-out;
+}
+
+/* Quand l'élément est visible (Intersection Observer) */
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* --- Fade In Left --- */
+.fade-in-left {
+  transform: translateX(-60px);
+}
+.fade-in-left.visible {
+  transform: translateX(0);
+}
+
+/* --- Fade In Right --- */
+.fade-in-right {
+  transform: translateX(60px);
+}
+.fade-in-right.visible {
+  transform: translateX(0);
+}
+
+/* --- Fade In Up --- */
+.fade-in-up {
+  transform: translateY(60px);
+}
+.fade-in-up.visible {
+  transform: translateY(0);
+}
+
+/* Effets plus marqués pour que ce soit visible ! */
+
+/* ----------------------------------------------------
+   16. ANIMATIONS DÉJÀ PRÉSENTES (optionnel)
+   (Vous pouvez retirer ou conserver si vous le souhaitez)
+---------------------------------------------------- */
+.animate__fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate__fadeInDown {
+  opacity: 0;
+  animation: fadeInDown 1.5s forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
