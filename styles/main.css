@@ -335,6 +335,40 @@ footer a.text-body-secondary {
 }
 
 /* ----------------------------------------------------
+   13. QUIZ CRITERE
+---------------------------------------------------- */
+#quiz-criteres {
+  padding: 1rem 0;
+  min-height: 70vh;                /* Quiz area is tall while active */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When quiz is done, override the min-height so it can shrink */
+#quiz-criteres.completed {
+  min-height: auto !important;                /* Now it can auto-size to show just the message */
+}
+
+/* You can optionally hide the quiz wizard itself once completed */
+#criteriaWizard.completed {
+  display: none !important;
+}
+
+/* Keep your success/warning messages small and centered */
+#felicitations,
+#notEligible {
+  margin-top: 1.5rem;
+  max-width: 600px; /* Limits their max width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------
    13. GALERIE (optionnel)
 ---------------------------------------------------- */
 .project-gallery img {

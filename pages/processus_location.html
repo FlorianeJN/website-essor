@@ -2,10 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Processus de Location - Essor Solidaire">
+  <meta name="description" content="Processus de Location - Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
+  <meta name="keywords" content="Processus de location, location, Essor Solidaire, candidature locataire, immobilier Côte d'Ivoire" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Processus de Location - Essor Solidaire</title>
-  <link rel="icon" href="../images/logos/logo_vert-sf.png">
+  <link rel="icon" href="./images/logos/logo_vert-sf.png">
+  
+  <!-- Link to your main.css which contains the animation styles -->
   <link rel="stylesheet" href="../styles/main.css">
 
   <!-- Bootstrap 5 CSS (CDN) -->
@@ -27,141 +30,284 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.essorsolidaireciv.com/processus_location.html" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Processus de Location - Essor Solidaire" />
+  <meta property="og:description" content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
+  <meta property="og:image" content="https://www.essorsolidaireciv.com/images/hero2.jpg" />
+  <meta property="og:url" content="https://www.essorsolidaireciv.com/processus_location.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Processus de Location - Essor Solidaire" />
+  <meta name="twitter:description" content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
+  <meta name="twitter:image" content="https://www.essorsolidaireciv.com/images/hero2.jpg" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Essor Solidaire",
+    "url": "https://www.essorsolidaireciv.com/",
+    "logo": "https://www.essorsolidaireciv.com/images/logos/logo_vert-sf.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2250702419652",
+      "contactType": "customer service",
+      "email": "contact@essorsolidaireciv.com"
+    },
+    "sameAs": [
+      "https://www.facebook.com/YourPage",
+      "https://twitter.com/YourProfile",
+      "https://www.instagram.com/YourProfile"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===============================
+       ANIMATION KEYFRAMES
+    ================================ */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* ===============================
+       BASE CLASSES FOR FADE/SLIDE
+    ================================ */
+    .fade-in {
+      opacity: 0; /* hidden by default */
+    }
+    .fade-in.appear {
+      animation: fadeIn 0.8s ease forwards;
+    }
+    .fade-in-up {
+      opacity: 0;
+    }
+    .fade-in-up.appear {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .fade-in-left {
+      opacity: 0;
+    }
+    .fade-in-left.appear {
+      animation: fadeInLeft 0.8s ease forwards;
+    }
+    .fade-in-right {
+      opacity: 0;
+    }
+    .fade-in-right.appear {
+      animation: fadeInRight 0.8s ease forwards;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<!-- NAVBAR (No .fade-in or other animation classes) -->
+<nav class="navbar navbar-expand-lg fixed-top shadow animate__fadeInDown">
   <div class="container">
     <a class="navbar-brand fw-bold" href="../index.html">
       <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
     </a>
-    <button 
-      class="navbar-toggler text-white" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Basculer la navigation"
-    >
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Basculer la navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html#apropos">À Propos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./processus_location.html">Processus de location</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html#projets">Projets</a>
-        </li>
-      <!--   <li class="nav-item">
-          <a class="nav-link" href="../index.html#temoignages">Témoignages</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#apropos">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="./processus_location.html#">Processus de location</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION UNIQUE POUR LE PROCESSUS -->
-<section id="hero-process" class="d-flex align-items-center" style="position: relative; height: 96vh; background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/background.jpg') no-repeat  center center/cover;">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Colonne de texte et CTA -->
-        <div class="col-md-6 text-white text-center text-md-start">
-          <h1 class="mb-3" style="font-size: 3rem;">Processus de Location</h1>
-          <p class="mb-4" style="font-size: 1.2rem;">
-            Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent.
-          </p>
-          <a href="#criteres" class="btn btn-light btn-lg">Commencer</a>
-        </div>
-        <!-- Colonne d'informations supplémentaires visible sur md et plus -->
-        <div class="col-md-6 d-none d-md-block text-white">
-          <div class="ms-5">
-            <h4 class="mb-3" style="font-size: 1.8rem;">Nos Atouts :</h4>
-            <ul class="list-unstyled" style="font-size: 1.1rem;">
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                Sélection rigoureuse des candidats
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                Processus simplifié et transparent
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                Accompagnement personnalisé
-              </li>
-            </ul>
-          </div>
+<!-- HERO SECTION -->
+<section 
+  id="hero-process" 
+  class="d-flex align-items-center fade-in-up"
+  style="position: relative; height: 95vh; 
+         background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+         url('../images/background.jpg') no-repeat center center/cover;"
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Colonne de texte et CTA -->
+      <div class="col-md-6 text-white text-center text-md-start fade-in-left">
+        <h1 class="mb-3" style="font-size: 3rem;">Processus de Location</h1>
+        <p class="mb-4" style="font-size: 1.2rem;">
+          Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent.
+        </p>
+        <a href="#quiz-criteres" class="btn btn-light btn-lg">Commencer</a>
+      </div>
+      <!-- Colonne d'informations supplémentaires -->
+      <div class="col-md-6 d-none d-md-block text-white fade-in-right">
+        <div class="ms-5">
+          <h4 class="mb-3" style="font-size: 1.8rem;">Nos Atouts :</h4>
+          <ul class="list-unstyled" style="font-size: 1.1rem;">
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Sélection rigoureuse des candidats
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Processus simplifié et transparent
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Accompagnement personnalisé
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-  
-  
-  
+  </div>
+</section>
 
-  <!-- SECTION : CRITÈRES DE SÉLECTION -->
-  <section id="criteres" class="py-5" style="scroll-margin-top: 80px;">
-    <div class="container">
-      <h2 class="section-title text-center mb-5">Critères de Sélection</h2>
-      <div class="row g-4">
-        <!-- Critère 1 -->
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded-3">
-            <h3 class="mb-3">Titre_Critere_1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet repellat id, eveniet soluta rerum minus vero odit quasi sit rem. Non ducimus fuga, delectus dolore fugiat dolorem quae aspernatur.
-            </p>
+<!-- QUIZ DES CRITÈRES DE SÉLECTION (Étape par Étape) -->
+<section id="quiz-criteres" class="py-5 fade-in-up" style="scroll-margin-top: 80px; ">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Vérifiez Votre Éligibilité</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <!-- Wizard des critères -->
+        <div class=" p-4 bg-white shadow rounded-3 text-center mx-auto" id="criteriaWizard">
+          <div id="criterionQuestion" class="mb-3 fs-5">
+            <div id="questionTitle" class="fw-semibold mb-1"></div>
+            <div id="questionDescription"></div>
+          </div>
+          <div>
+            <button class="btn btn-outline-dark me-3" onclick="handleAnswer(true)">
+              Oui
+            </button>
+            <button class="btn btn-outline-dark" onclick="handleAnswer(false)">
+              Non
+            </button>
           </div>
         </div>
-        <!-- Critère 2 -->
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded-3">
-            <h3 class="mb-3">Titre_Critere_2</h3>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto, culpa debitis cupiditate beatae labore porro expedita nesciunt commodi laborum, quia natus adipisci, numquam sequi? Modi animi commodi libero odio.
-            </p>
-          </div>
+
+        <!-- Félicitations (caché par défaut) -->
+        <div 
+          id="felicitations" 
+          class="alert alert-success mt-4 text-center" 
+          style="display: none;"
+        >
+          <strong>Félicitations !</strong> Vous répondez à tous nos critères de présélection.  
+          <br>Veuillez faire défiler la page pour découvrir nos critères détaillés et nos étapes de location.
         </div>
-        <!-- Critère 3 -->
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded-3">
-            <h3 class="mb-3">Titre_Critere_3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae corrupti ipsa, vel quos ratione quod fuga magnam officiis ad, iusto accusamus temporibus. Culpa dolorem illum enim optio maxime labore.
-            </p>
-          </div>
-        </div>
-        <!-- Critère 4 -->
-        <div class="col-md-6">
-          <div class="p-4 bg-white shadow rounded-3">
-            <h3 class="mb-3">Titre_Critere_4</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam earum repudiandae hic, beatae natus libero praesentium cumque, vero, dolorum voluptatem ad obcaecati nostrum et dicta ea quidem ipsum exercitationem expedita.
-            </p>
-          </div>
+
+        <!-- Non éligible (caché par défaut) -->
+        <div 
+          id="notEligible" 
+          class="alert alert-warning mt-4 text-center" 
+          style="display: none;"
+        >
+          <strong>Désolé !</strong> Vous ne répondez pas à un de nos critères.  
+          <br>Pour en savoir plus sur nos exigences, veuillez consulter la section "Critères de Sélection" ci-dessous ou nous contacter.
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- SECTION : CRITÈRES DE SÉLECTION (masqué par défaut) -->
+<section id="detailedCriteres" class="py-5" style="display: none;">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 fade-in-up">Critères de Sélection</h2>
+    <div class="row g-4">
+      <!-- Critère 1 -->
+      <div class="col-md-6 fade-in-left">
+        <div class="p-4 bg-white shadow rounded-3">
+          <h3 class="mb-3">C1</h3>
+          <p>
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nostrum consequuntur facilis maxime corporis illo nulla voluptates eos possimus voluptas quos voluptatem magni ipsam ab, vel aperiam assumenda autem quibusdam!
+          </p>
+        </div>
+      </div>
+      <!-- Critère 2 -->
+      <div class="col-md-6 fade-in-right">
+        <div class="p-4 bg-white shadow rounded-3">
+          <h3 class="mb-3">C2</h3>
+          <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquid adipisci vitae harum? Molestias nostrum ea magnam, ipsum, veniam fugiat, minima blanditiis placeat tempora ratione consectetur. Impedit tempore at consequuntur?
+          </p>
+        </div>
+      </div>
+      <!-- Critère 3 -->
+      <div class="col-md-6 fade-in-left">
+        <div class="p-4 bg-white shadow rounded-3">
+          <h3 class="mb-3">C3</h3>
+          <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti reprehenderit iusto reiciendis porro facilis excepturi modi consequatur. Aliquid, qui ullam eius minus sint, reprehenderit possimus consequuntur, saepe animi hic facilis.
+          </p>
+        </div>
+      </div>
+      <!-- Critère 4 -->
+      <div class="col-md-6 fade-in-right">
+        <div class="p-4 bg-white shadow rounded-3">
+          <h3 class="mb-3">C4</h3>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, repellat pariatur earum facilis ratione voluptates! Deleniti a qui autem est ea quos, earum rerum molestias eligendi, ipsum, in reiciendis dicta!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- “Reste de la page” = ÉTAPES + AVANTAGES (seulement si “Oui” à tout) -->
+<div id="restOfPage" style="display: none;">
 
   <!-- SECTION : ÉTAPES DU PROCESSUS -->
-  <section id="etapes" class="py-5 bg-light">
+  <section id="etapes" class="py-5 bg-light fade-in-up">
     <div class="container">
       <h2 class="section-title text-center mb-5">Étapes du Processus de Location</h2>
       <div class="row g-4">
@@ -169,20 +315,24 @@
           <div class="p-4 bg-white shadow rounded-3">
             <ol class="list-group list-group-numbered">
               <li class="list-group-item">
-                <strong>Soumission de la Demande :</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima est rem doloribus consequatur eius.
+                <strong>Soumission de la Demande :</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet quia autem omnis esse dicta magnam voluptatibus soluta ab doloribus dolor totam velit, provident minus aspernatur culpa corrupti aut aliquam.
               </li>
               <li class="list-group-item">
-                <strong>Analyse de la Candidature :</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis sed corrupti repudiandae doloremque! 
+                <strong>Analyse de la Candidature :</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque et vel numquam assumenda eligendi esse, reiciendis quo, repellendus laboriosam exercitationem ullam ipsa? Earum similique nesciunt iure repellat consequatur magnam laudantium.
               </li>
               <li class="list-group-item">
-                <strong>Entretien et Vérification :</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt molestiae voluptatem dicta laborum fugit.
+                <strong>Entretien et Vérification :</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eum mollitia accusantium earum eveniet sequi consequuntur, ratione assumenda cum. Totam possimus natus facilis dicta? Officia aliquid sint sit amet laborum?
               </li>
               <li class="list-group-item">
-                <strong>Validation et Signature du Contrat :</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam ad nemo. Odio veritatis accusantium culpa necessitatibus.
+                <strong>Validation et Signature du Contrat :</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nulla fugit perspiciatis! Quae qui voluptatibus ipsam officiis placeat laborum itaque quas quisquam odit! Autem, harum? Suscipit nulla cum esse molestiae.
               </li>
             </ol>
             <div class="text-center mt-4">
-              <a href="#contact" class="btn btn-outline-dark btn-lg">
+              <a 
+                href="../data/formulaire_location.pdf" 
+                download="../data/formulaire_location.pdf" 
+                class="btn btn-outline-dark btn-lg"
+              >
                 Télécharger le formulaire de demande de location
               </a>
             </div>
@@ -193,182 +343,346 @@
   </section>
 
   <!-- SECTION : AVANTAGES À VIVRE AVEC NOUS -->
-  <section id="avantages" class="py-5">
+  <section id="avantages" class="py-5 fade-in-up">
     <div class="container">
       <h2 class="section-title text-center mb-5">Les Avantages de Vivre avec Nous</h2>
       <div class="row g-4">
         <!-- Avantage 1 -->
-        <div class="col-md-4">
+        <div class="col-md-4 fade-in-left">
           <div class="p-4 bg-white shadow rounded-3 text-center">
             <div class="mb-3 fs-1 text-primary">
               <i class="bi bi-shield-lock" style="color: #000;"></i>
             </div>
-            <h3 class="mb-3">Titre_Avantage_1</h3>
+            <h3 class="mb-3">Avantage 1</h3>
             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam vitae nisi mollitia dolorem a distinctio? Commodi aperiam saepe.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolore ea recusandae adipisci dolor est odio eveniet molestias distinctio a itaque voluptatem in beatae enim, temporibus magnam fuga harum esse.
             </p>
           </div>
         </div>
         <!-- Avantage 2 -->
-        <div class="col-md-4">
-          <div class="p-4 bg-white shadow rounded-3 text-center" >
+        <div class="col-md-4 fade-in-up">
+          <div class="p-4 bg-white shadow rounded-3 text-center">
             <div class="mb-3 fs-1 text-primary">
-              <i class="bi bi-cash" style="color: #000;"></i>
+              <i class="bi bi-lightning-charge-fill" style="color: #000;"></i>
             </div>
-            <h3 class="mb-3">Titre_Avantage_2</h3>
+            <h3 class="mb-3">Avantage 2</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum beatae asperiores laborum maiores perferendis mollitia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae in debitis inventore! Ad praesentium nobis repudiandae explicabo? Laudantium voluptate dolore architecto fugit illum quasi, voluptas quibusdam? Corrupti, quasi culpa!
             </p>
           </div>
         </div>
         <!-- Avantage 3 -->
-        <div class="col-md-4">
+        <div class="col-md-4 fade-in-right">
           <div class="p-4 bg-white shadow rounded-3 text-center">
             <div class="mb-3 fs-1 text-primary">
-              <i class="bi bi-people" style="color: #000;"></i>
+              <i class="bi bi-cash-coin" style="color: #000;"></i>
             </div>
-            <h3 class="mb-3">Titre_Avantage_3</h3>
+            <h3 class="mb-3">Avantage 3</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus eos delectus eligendi! Iusto, dolorem!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae rem, esse iure minima perferendis impedit minus reprehenderit voluptates itaque corrupti! Repellat officia accusamus quisquam rerum quaerat amet suscipit nemo impedit.
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+</div>
 
-  <!-- CONTACT -->
-<section id="contact" class="py-5">
+<!-- CONTACT (masqué par défaut) -->
+<section id="contact" class="py-5 fade-in-up" style="display: none;">
   <div class="container">
     <h2 class="section-title text-center mb-4">Contactez-Nous</h2>
-    <p class="text-center mb-5">
-      Prêts à franchir l’étape suivante ? Remplissez le formulaire ci-dessous
-      et nous vous répondrons rapidement.
+    <p class="text-center mb-5" id="contactIntro">
+      N'hésitez pas à remplir le formulaire ci-dessous pour nous contacter.
     </p>
 
     <div class="row g-4 justify-content-center">
-      <!-- Coordonnées -->
-      <div class="col-md-4">
-        <div class="rounded-3 shadow p-4 h-100 bg-white">
+      <!-- Coordonnées (masqué si non éligible) -->
+      <div class="col-md-4" id="contactCoordinates" style="display: none;">
+        <div class="rounded-3 shadow p-4 h-100 bg-white fade-in">
           <h4 class="mb-3">Coordonnées</h4>
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-envelope fs-5 me-3" style="color: #000; fill: #000;"></i>
+            <i class="bi bi-envelope fs-5 me-3" style="color: #000;"></i>
             <span>contact@essorsolidaireciv.com</span>
           </div>
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-telephone fs-5 me-3" style="color: #000; fill: #000;"></i>
+            <i class="bi bi-telephone fs-5 me-3" style="color: #000;"></i>
             <span>+225 07 02 41 96 52</span>
           </div>
           <div class="d-flex align-items-center">
-            <i class="bi bi-geo-alt fs-5 me-3" style="color: #000; fill: #000;"></i>
+            <i class="bi bi-geo-alt fs-5 me-3" style="color: #000;"></i>
             <span>Abidjan, Yopougon Port Bouet 2</span>
           </div>
         </div>
       </div>
 
-
-      <!-- Card: Formulaire de contact -->
-      <div class="col-md-6">
-        <div class="rounded-3 shadow p-4 h-100 bg-white">
-          <form
-            action="https://formspree.io/f/xxxxxxx"
-            method="POST"
-          >
+      <!-- Formulaire de contact (toujours affiché) -->
+      <div class="col-md-6" id="contactForm">
+        <div class="rounded-3 shadow p-4 h-100 bg-white fade-in">
+          <form action="https://formspree.io/f/xkgozywa" method="POST">
+            <!-- Champ Nom -->
             <div class="mb-3">
               <label for="name" class="form-label">Nom</label>
               <input 
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Entrez votre nom"
+                type="text" 
+                class="form-control" 
+                id="name" 
+                name="name" 
+                placeholder="Entrez votre nom" 
                 required
               >
             </div>
+    
+            <!-- Champ Email -->
             <div class="mb-3">
               <label for="email" class="form-label">Courriel</label>
               <input 
                 type="email" 
                 class="form-control" 
                 id="email" 
-                name="_replyto"
-                placeholder="Entrez votre courriel"
+                name="_replyto" 
+                placeholder="Entrez votre courriel" 
                 required
               >
             </div>
+    
+            <!-- Champ Message -->
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea 
                 class="form-control" 
                 id="message" 
                 name="message" 
-                rows="5"
-                placeholder="Entrez votre message"
+                rows="5" 
+                placeholder="Entrez votre message" 
                 required
               ></textarea>
             </div>
+    
+            <!-- Nouveau Champ : Joindre un fichier -->
+            <div class="mb-3" id="fileAttachmentSection">
+              <label for="file" class="form-label">Joindre un fichier</label>
+              <input 
+                type="file" 
+                class="form-control" 
+                id="file" 
+                name="attachments[]"
+              >
+            </div>
+    
+            <!-- Champ caché pour l'objet du mail -->
             <input 
-              type="hidden"
-              name="_subject"
+              type="hidden" 
+              name="_subject" 
               value="Nouveau message du site immobilier"
             >
-             <!-- Submit Button -->
-             <button type="submit" class="btn btn-dark">
+    
+            <!-- Bouton d’envoi -->
+            <button type="submit" class="btn btn-dark">
               <i class="bi bi-send me-1"></i>
               Envoyer mon message
             </button>
           </form>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white py-4 mt-5 border-top">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Branding & Logo -->
-        <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-          <a href="index.html" class="d-inline-flex align-items-center text-decoration-none">
-            <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
-          </a>
-          <p class="small text-muted mb-0">&copy; 2025 Essor Solidaire. Tous droits réservés.</p>
-        </div>
-        <!-- Contact Information -->
-        <div class="col-md-4 text-center mb-3 mb-md-0">
-          <p class="small text-muted mb-0">
-            <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
-            <i class="bi bi-envelope me-1"></i> contact@essorsolidaireciv.com
-          </p>
-        </div>
-        <!-- Social Media Links -->
-        <div class="col-md-4 text-center text-md-end">
-          <ul class="list-unstyled d-inline-flex mb-0">
-            <li class="ms-3">
-              <a class="text-dark" href="#">
-                <i class="bi bi-twitter fs-5"></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="text-dark" href="#">
-                <i class="bi bi-instagram fs-5"></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="text-dark" href="#">
-                <i class="bi bi-facebook fs-5"></i>
-              </a>
-            </li>
-          </ul>
+    <!-- FOOTER -->
+    <footer class="bg-white py-4 mt-5 border">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Branding & Logo -->
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <a href="../index.html" class="d-inline-flex align-items-center text-decoration-none">
+              <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
+            </a>
+            <p class="small text-muted mb-0">&copy; 2025 Essor Solidaire. Tous droits réservés.</p>
+            <p class="small text-muted mb-0">Conçu et développé par <a target="_blank" href="https://florianenikebie.netlify.app/" class="text-dark text-decoration-none">Floriane Nikébié</a>.</p>
+            
+          </div>
+          <!-- Contact Information -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <p class="small text-muted mb-0">
+              <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
+              <i class="bi bi-envelope me-1"></i> tape.auguste@essorsolidaireciv.com <br>
+              <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2</p>
+          </div>
+          <!-- Social Media Links -->
+          <div class="col-md-4 text-center text-md-end">
+            <ul class="list-unstyled d-inline-flex mb-0">
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-twitter fs-5"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Bootstrap 5 JS (CDN) -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
+<!-- Bootstrap 5 JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Intersection Observer for scroll-triggered animations et criteria Quiz -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // --------------------------------------------------
+    // Intersection Observer for fade/slide animations
+    // --------------------------------------------------
+    const animatedEls = document.querySelectorAll(
+      ".fade-in, .fade-in-up, .fade-in-left, .fade-in-right"
+    );
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+    const onScrollObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("appear");
+        obs.unobserve(entry.target);
+      });
+    }, observerOptions);
+    animatedEls.forEach((el) => onScrollObserver.observe(el));
+
+    // --------------------------------------------------
+    // Quiz: Criteria step-by-step
+    // --------------------------------------------------
+    const criteres = [
+      {
+        title: "1 - Stabilité professionnelle",
+        content: "Avez-vous un emploi stable et un revenu régulier ?",
+      },
+      {
+        title: "2 - Historique locatif",
+        content:
+          "Avez-vous un historique de paiements de loyers sans incidents majeurs ?",
+      },
+      {
+        title: "3 - Situation financière",
+        content:
+          "Votre dossier financier est-il exempt de dettes impayées ou d'incidents judiciaires en cours, y compris des jugements ou des saisies ?",
+      },
+      {
+        title: "4 - Entretien du bien",
+        content:
+          "Êtes-vous prêt à maintenir le bon état du bien immobilier et à respecter les règles de la communauté ?",
+      },
+      {
+        title: "5 - Documents justificatifs",
+        content:
+          "Êtes-vous disposé à fournir les documents nécessaires (fiches de paie, attestations d'emploi, relevés bancaires, documents judiciaires, etc.) pour vérifier votre stabilité et votre historique ?",
+      },
+    ];
+
+    let currentIndex = 0;
+
+    // Element references
+    const quizCriteresContainer = document.getElementById("quiz-criteres");
+    const criteriaWizard = document.getElementById("criteriaWizard");
+    const questionTitleElem = document.getElementById("questionTitle");
+    const questionDescriptionElem = document.getElementById("questionDescription");
+    const criterionContainer = document.getElementById("criterionQuestion");
+
+    const felicitations = document.getElementById("felicitations");
+    const notEligible = document.getElementById("notEligible");
+    const detailedCriteres = document.getElementById("detailedCriteres");
+    const restOfPage = document.getElementById("restOfPage");
+    const contactSection = document.getElementById("contact");
+    const contactCoordinates = document.getElementById("contactCoordinates");
+    const contactForm = document.getElementById("contactForm");
+    const fileAttachmentSection = document.getElementById("fileAttachmentSection");
+
+    // Function to display the current criterion
+    function displayCurrentCriterion() {
+      questionTitleElem.textContent = criteres[currentIndex].title;
+      questionDescriptionElem.textContent = criteres[currentIndex].content;
+      // Fade in
+      criterionContainer.style.opacity = 1;
+    }
+
+    // Display the first criterion on page load
+    displayCurrentCriterion();
+
+    // Global function for the "Oui"/"Non" buttons
+    window.handleAnswer = function (isYes) {
+      // Fade out the question
+      criterionContainer.style.opacity = 0;
+
+      setTimeout(function () {
+        if (isYes) {
+          currentIndex++;
+          if (currentIndex < criteres.length) {
+            // Show next criterion
+            displayCurrentCriterion();
+          } else {
+            // All answered "Yes" => Eligible
+            // Add .completed to shrink the container & hide the wizard
+            quizCriteresContainer.classList.add("completed");
+            criteriaWizard.classList.add("completed");
+
+            // Show success message & the rest of the page
+            felicitations.style.display = "block";
+            notEligible.style.display = "none";
+            detailedCriteres.style.display = "block";
+            restOfPage.style.display = "block";
+            contactSection.style.display = "block";
+            contactCoordinates.style.display = "block";
+            contactForm.style.display = "block";
+            fileAttachmentSection.style.display = "block";
+          }
+        } else {
+          // User answered "Non" => Not Eligible
+          quizCriteresContainer.classList.add("completed");
+          criteriaWizard.classList.add("completed");
+
+          // Show warning message & hide some sections
+          felicitations.style.display = "none";
+          notEligible.style.display = "block";
+          detailedCriteres.style.display = "block";
+          restOfPage.style.display = "none";
+          contactSection.style.display = "block";
+          contactCoordinates.style.display = "none";
+          contactForm.style.display = "block";
+          fileAttachmentSection.style.display = "none";
+        }
+        // Fade back in if another question is coming
+        criterionContainer.style.opacity = 1;
+      }, 500); // fade duration
+    };
+
+    // --------------------------------------------------
+    // Navbar collapse script
+    // --------------------------------------------------
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navCollapse = document.getElementById("mainNavbar");
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        const isTogglerVisible =
+          window.getComputedStyle(document.querySelector(".navbar-toggler"))
+            .display !== "none";
+        if (isTogglerVisible) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
