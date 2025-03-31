@@ -486,7 +486,7 @@
                 <strong>Validation et Signature du Contrat :</strong> Une fois la demande validée et les documents vérifiés, le contrat de location est signé, assurant ainsi un accord clair et sécurisé pour les deux parties.
               </li>
             </ol>
-            <div class="text-center mt-4">
+            <div class="text-center mt-4" id="downloadFormContainer">
               <a 
                 href="../data/formulaire_location.pdf" 
                 download="../data/formulaire_location.pdf" 
@@ -651,66 +651,69 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-white py-4 mt-5 border">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Branding & Logo -->
-      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-        <a 
-          href="../index.html" 
-          class="d-inline-flex align-items-center text-decoration-none"
+<footer 
+class="bg-white py-4 mt-5 border"
+>
+<div class="container">
+  <div class="row align-items-center">
+    <!-- Branding & Logo -->
+    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+      <a 
+        href="index.html" 
+        class="d-inline-flex align-items-center text-decoration-none"
+      >
+        <img 
+          src="../images/logos/logo_noir-sf.png" 
+          class="logo" 
+          alt="Logo Essor Solidaire, agence immobilière en Côte d’Ivoire"
         >
-          <img 
-            src="../images/logos/logo_noir-sf.png" 
-            class="logo" 
-            alt="Logo Essor Solidaire, agence immobilière en Côte d’Ivoire"
-          >
-        </a>
-        <p class="small text-muted mb-0">
-          &copy; 2025 Essor Solidaire. Tous droits réservés.
-        </p>
-        <p class="small text-muted mb-0">
-          Conçu et développé par 
-          <a 
-            target="_blank" 
-            href="https://florianenikebie.netlify.app/" 
-            class="text-dark text-decoration-none"
-          >
-            Floriane Nikébié
-          </a>.
-        </p>
-      </div>
-      <!-- Contact Information -->
-      <div class="col-md-4 text-center mb-3 mb-md-0">
-        <p class="small text-muted mb-0">
-          <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
-          <i class="bi bi-envelope me-1"></i> tape.auguste@essorsolidaireciv.com <br>
-          <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2
-        </p>
-      </div>
-      <!-- Social Media Links -->
-      <div class="col-md-4 text-center text-md-end">
-        <ul class="list-unstyled d-inline-flex mb-0">
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-twitter fs-5"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-instagram fs-5"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-facebook fs-5"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      </a>
+      <p class="small text-muted mb-0">
+        &copy; 2025 Essor Solidaire. Tous droits réservés.
+      </p>
+      <p class="small text-muted mb-0">
+        Conçu et développé par 
+        <a 
+          target="_blank" 
+          href="https://florianenikebie.netlify.app/" 
+          class="text-dark text-decoration-none"
+        >
+          Floriane Nikébié
+        </a>.
+      </p>
+    </div>
+    <!-- Contact Information -->
+    <div class="col-md-4 text-center mb-3 mb-md-0">
+      <p class="small text-muted mb-0">
+        <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
+        <i class="bi bi-envelope me-1"></i> tape.auguste@essorsolidaireciv.com <br>
+        <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2
+      </p>
+    </div>
+    <!-- Social Media Links -->
+    <div class="col-md-4 text-center text-md-end">
+      <ul class="list-unstyled d-inline-flex mb-0">
+        <li class="ms-3">
+          <a class="text-dark" href="#">
+            <i class="bi bi-twitter fs-5"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-dark" href="#">
+            <i class="bi bi-instagram fs-5"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-dark" href="#">
+            <i class="bi bi-facebook fs-5"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 </footer>
+
 
 <!-- Bootstrap 5 JS -->
 <script 
@@ -719,6 +722,9 @@
 
 <!-- Intersection Observer / quiz script -->
 <script>
+
+  const apartmentsAvailable = false; //Toggle to true if at least one appartment is available
+
   document.addEventListener("DOMContentLoaded", function () {
     /* ... Script d’intersection observer + quiz (inchangé, sauf alt texts / localStorage) ... */
 
@@ -784,6 +790,7 @@
     const contactForm = document.getElementById("contactForm");
     const fileAttachmentSection = document.getElementById("fileAttachmentSection");
     const subjectInput = document.getElementById("formSubject");
+    const downloadFormContainer = document.getElementById("downloadFormContainer");
 
     // Questions
     const criteres = [
@@ -833,36 +840,56 @@
     };
 
     function onEligible() {
-      quizCriteresContainer.classList.add("completed");
-      criteriaWizard.classList.add("completed");
-      setEligibilityData("yes");
+    // Mark quiz completed
+    quizCriteresContainer.classList.add("completed");
+    criteriaWizard.classList.add("completed");
+    setEligibilityData("yes");
+    
+    notEligible.style.display = "none";
+    detailedCriteres.style.display = "block";
+    restOfPage.style.display = "block";
+    contactSection.style.display = "block";
+    
+    // If apartments ARE available: show the form and normal text
+    if (apartmentsAvailable) {
+      downloadFormContainer.style.display = "block";
       felicitations.style.display = "block";
-      notEligible.style.display = "none";
-      detailedCriteres.style.display = "block";
-      restOfPage.style.display = "block";
-      contactSection.style.display = "block";
+      felicitations.innerHTML = `
+        <strong>Félicitations !</strong> Vous répondez à tous nos critères de sélection.
+        <br>Vous trouverez sur cette page toutes les informations nécéssaires à la location d'un de nos biens.
+      `;
+      
       contactCoordinates.style.display = "block";
       contactForm.style.display = "block";
       fileAttachmentSection.style.display = "block";
+      
       contactHeading.textContent = "Soumission de demande de location";
-      contactIntro.textContent = "Vous pouvez soumettre votre demande en utilisant ce formulaire. N'oubliez pas de joindre à votre message tous les documents demandés.";
-    }
-
-    function onNotEligible() {
-      quizCriteresContainer.classList.add("completed");
-      criteriaWizard.classList.add("completed");
-      setEligibilityData("no");
-      felicitations.style.display = "none";
-      notEligible.style.display = "block";
-      detailedCriteres.style.display = "block";
-      restOfPage.style.display = "none";
-      contactSection.style.display = "block";
+      contactIntro.textContent = 
+        "Vous pouvez soumettre votre demande en utilisant ce formulaire. "
+        + "N'oubliez pas de joindre à votre message tous les documents demandés.";
+    
+    // If apartments are NOT available: show unavailability message, hide form
+    } else {
+      felicitations.style.display = "block";
+      felicitations.innerHTML = `
+        <strong>Félicitations !</strong><br>
+        Vous répondez à tous nos critères de présélection.
+        <br><br>
+        Cependant, nos appartements sont actuellement indisponibles.
+        Nous rouvrirons le formulaire de demande dès qu’un bien sera disponible.
+      `;
+      
+      downloadFormContainer.style.display = "none";
       contactCoordinates.style.display = "none";
-      contactForm.style.display = "block";
+      contactForm.style.display = "none";
       fileAttachmentSection.style.display = "none";
-      contactHeading.textContent = "Contactez-Nous";
-      contactIntro.textContent = "N'hésitez pas à remplir le formulaire ci-dessous pour nous contacter.";
+      
+      contactHeading.textContent = "Appartements temporairement indisponibles";
+      contactIntro.textContent =
+        "Merci pour votre intérêt. Nous vous tiendrons informé(e) dès qu’un logement sera de nouveau disponible !";
     }
+  }
+
 
     function initEligibilityFlow() {
       if (isEligibilityDataValid()) {
