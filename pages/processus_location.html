@@ -2,59 +2,81 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Processus de Location - Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
-  <meta name="keywords" content="Processus de location, location, Essor Solidaire, candidature locataire, immobilier Côte d'Ivoire" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Processus de Location - Essor Solidaire</title>
-  <link rel="icon" href="./images/logos/logo_vert-sf.png">
   
-  <!-- Link to your main.css which contains the animation styles -->
-  <link rel="stylesheet" href="../styles/main.css">
-
-  <!-- Bootstrap 5 CSS (CDN) -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
+  <!-- Title et Meta description -->
+  <title>Processus de Location - Essor Solidaire</title>
+  <meta 
+    name="description" 
+    content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent."
+  >
+  
+  <!-- Keywords (optionnel) -->
+  <meta 
+    name="keywords" 
+    content="Processus de location, location, Essor Solidaire, candidature locataire, immobilier Côte d'Ivoire, location d'appartements, appartements à Tiassalé, location d'appartements à Tiassalé"
   >
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
-    rel="stylesheet"
-  >
-
-  <!-- Bootstrap Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.essorsolidaireciv.com/processus_location.html" />
+  <link 
+    rel="canonical" 
+    href="https://www.essorsolidaireciv.com/processus_location.html" 
+  />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Processus de Location - Essor Solidaire" />
-  <meta property="og:description" content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
-  <meta property="og:image" content="https://www.essorsolidaireciv.com/images/hero2.jpg" />
-  <meta property="og:url" content="https://www.essorsolidaireciv.com/processus_location.html" />
-  <meta property="og:type" content="website" />
+  <meta 
+    property="og:title" 
+    content="Processus de Location - Essor Solidaire" 
+  />
+  <meta 
+    property="og:description" 
+    content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." 
+  />
+  <meta 
+    property="og:image" 
+    content="https://www.essorsolidaireciv.com/images/hero2.jpg" 
+  />
+  <meta 
+    property="og:url" 
+    content="https://www.essorsolidaireciv.com/processus_location.html" 
+  />
+  <meta 
+    property="og:type" 
+    content="website" 
+  />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Processus de Location - Essor Solidaire" />
-  <meta name="twitter:description" content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." />
-  <meta name="twitter:image" content="https://www.essorsolidaireciv.com/images/hero2.jpg" />
+  <meta 
+    name="twitter:title" 
+    content="Processus de Location - Essor Solidaire" 
+  />
+  <meta 
+    name="twitter:description" 
+    content="Découvrez comment devenir locataire chez Essor Solidaire grâce à un processus clair, rapide et transparent." 
+  />
+  <meta 
+    name="twitter:image" 
+    content="https://www.essorsolidaireciv.com/images/hero2.jpg" 
+  />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data : RealEstateAgent -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "RealEstateAgent",
     "name": "Essor Solidaire",
     "url": "https://www.essorsolidaireciv.com/",
     "logo": "https://www.essorsolidaireciv.com/images/logos/logo_vert-sf.png",
+    "image": "https://www.essorsolidaireciv.com/images/background.jpg",
+    "description": "Services Immobiliers Professionnels et Gestion d’Actifs en Côte d’Ivoire. Nous aidons les travailleurs à trouver un logement sécurisé, confortable et adapté à leurs besoins.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yopougon Port Bouet 2",
+      "addressLocality": "Abidjan",
+      "addressCountry": "CI"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+2250702419652",
@@ -65,6 +87,28 @@
       "https://www.facebook.com/YourPage",
       "https://twitter.com/YourProfile",
       "https://www.instagram.com/YourProfile"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BreadcrumbList : fil d’Ariane -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.essorsolidaireciv.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Processus de Location",
+        "item": "https://www.essorsolidaireciv.com/processus_location.html"
+      }
     ]
   }
   </script>
@@ -145,16 +189,68 @@
       animation: fadeInRight 0.8s ease forwards;
     }
   </style>
-</head>
-<body>
 
-<!-- NAVBAR (No .fade-in or other animation classes) -->
-<nav class="navbar navbar-expand-lg fixed-top shadow animate__fadeInDown">
+  <!-- Favicon -->
+  <link 
+    rel="icon" 
+    href="../images/logos/logo_vert-sf.png"
+  >
+  
+  <!-- main.css -->
+  <link 
+    rel="stylesheet" 
+    href="../styles/main.css"
+  >
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <!-- Google Fonts -->
+  <link 
+    rel="preconnect" 
+    href="https://fonts.googleapis.com"
+  >
+  <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" 
+    crossorigin
+  >
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow">
   <div class="container">
     <a class="navbar-brand fw-bold" href="../index.html">
-      <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
+      <img 
+        src="../images/logos/logo_noir-sf.png" 
+        class="logo" 
+        alt="Logo Essor Solidaire, agence immobilière en Côte d’Ivoire"
+      >
     </a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Basculer la navigation">
+    <button 
+      class="navbar-toggler text-white" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#mainNavbar" 
+      aria-controls="mainNavbar" 
+      aria-expanded="false" 
+      aria-label="Basculer la navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
@@ -170,7 +266,7 @@
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION (Avec <h1> unique) -->
 <section 
   id="hero-process" 
   class="d-flex align-items-center fade-in-up"
@@ -212,14 +308,17 @@
   </div>
 </section>
 
-<!-- QUIZ DES CRITÈRES DE SÉLECTION (Étape par Étape) -->
-<section id="quiz-criteres" class="py-5 fade-in-up" style="scroll-margin-top: 80px;">
+<!-- QUIZ DES CRITÈRES DE SÉLECTION -->
+<section 
+  id="quiz-criteres" 
+  class="py-5 fade-in-up" 
+  style="scroll-margin-top: 80px;"
+>
   <div class="container">
     <h2 class="section-title text-center mb-5">Vérifiez Votre Éligibilité</h2>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <!-- Wizard des critères -->
-        <div class=" p-4 bg-white shadow rounded-3 text-center mx-auto" id="criteriaWizard">
+        <div class="p-4 bg-white shadow rounded-3 text-center mx-auto" id="criteriaWizard">
           <div id="criterionQuestion" class="mb-3 fs-5">
             <div id="questionTitle" class="fw-semibold mb-1"></div>
             <div id="questionDescription"></div>
@@ -234,7 +333,7 @@
           </div>
         </div>
 
-        <!-- Félicitations (caché par défaut) -->
+        <!-- Félicitations -->
         <div 
           id="felicitations" 
           class="alert alert-success mt-4 text-center" 
@@ -244,7 +343,7 @@
           <br>Veuillez faire défiler la page pour découvrir nos critères détaillés et nos étapes de location.
         </div>
 
-        <!-- Non éligible (caché par défaut) -->
+        <!-- Non éligible -->
         <div 
           id="notEligible" 
           class="alert alert-warning mt-4 text-center" 
@@ -259,7 +358,11 @@
 </section>
 
 <!-- SECTION : CRITÈRES DE SÉLECTION (masqué par défaut) -->
-<section id="detailedCriteres" class="py-5" style="display: none;">
+<section 
+  id="detailedCriteres" 
+  class="py-5" 
+  style="display: none;"
+>
   <div class="container">
     <h2 class="section-title text-center mb-5 fade-in-up">Critères de Sélection</h2>
     <div class="row g-4">
@@ -308,56 +411,62 @@
   </div>
 </section>
 
-<!-- “Reste de la page” = ÉTAPES + AVANTAGES (seulement si “Oui” à tout) -->
+<!-- Reste de la page (Étapes + Avantages) masqué si NON -->
 <div id="restOfPage" style="display: none;">
 
-    <!-- SECTION : AVANTAGES À VIVRE AVEC NOUS -->
-    <section id="avantages" class="py-5 fade-in-up">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">Les Avantages de Vivre avec Nous</h2>
-        <div class="row g-4">
-          <!-- Avantage 1 -->
-          <div class="col-md-4 fade-in-left">
-            <div class="p-4 bg-white shadow rounded-3 text-center">
-              <div class="mb-3 fs-1 text-primary">
-                <i class="bi bi-shield-lock" style="color: #000;"></i>
-              </div>
-              <h3 class="mb-3">Sécurité 24/7</h3>
-              <p class="text-justify">
-                ESSOR SOLIDAIRE assure une sécurité optimale avec un service de gardiennage disponible 24 heures sur 24, 7 jours sur 7, ainsi que la maintenance continue de la cité pour garantir un environnement sûr et bien entretenu.
-              </p>
+  <!-- SECTION : AVANTAGES -->
+  <section 
+    id="avantages" 
+    class="py-5 fade-in-up"
+  >
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Optez pour Essor Solidaire</h2>
+      <div class="row g-4">
+        <!-- Avantage 1 -->
+        <div class="col-md-4 fade-in-left">
+          <div class="p-4 bg-white shadow rounded-3 text-center">
+            <div class="mb-3 fs-1 text-primary">
+              <i class="bi bi-shield-lock" style="color: #000;"></i>
             </div>
+            <h3 class="mb-3">Sécurité 24/7</h3>
+            <p class="text-justify">
+              ESSOR SOLIDAIRE assure une sécurité optimale avec un service de gardiennage disponible 24 heures sur 24, 7 jours sur 7, ainsi que la maintenance continue de la cité pour garantir un environnement sûr et bien entretenu.
+            </p>
           </div>
-          <!-- Avantage 2 -->
-          <div class="col-md-4 fade-in-up">
-            <div class="p-4 bg-white shadow rounded-3 text-center">
-              <div class="mb-3 fs-1 text-primary">
-                <i class="bi bi-lightning-charge-fill" style="color: #000;"></i>
-              </div>
-              <h3 class="mb-3">Groupe électrogène</h3>
-              <p class="text-justify">
-                Pour garantir une alimentation continue en cas de coupure de courant, ESSOR SOLIDAIRE met gratuitement à disposition un groupe électrogène en cas de coupure générale d’électricité (non applicable en cas de coupure due à des factures impayées).
-              </p>
+        </div>
+        <!-- Avantage 2 -->
+        <div class="col-md-4 fade-in-up">
+          <div class="p-4 bg-white shadow rounded-3 text-center">
+            <div class="mb-3 fs-1 text-primary">
+              <i class="bi bi-lightning-charge-fill" style="color: #000;"></i>
             </div>
+            <h3 class="mb-3">Groupe électrogène</h3>
+            <p class="text-justify">
+              Pour garantir une alimentation continue en cas de coupure de courant, ESSOR SOLIDAIRE met gratuitement à disposition un groupe électrogène en cas de coupure générale d’électricité (non applicable en cas de coupure due à des factures impayées).
+            </p>
           </div>
-          <!-- Avantage 3 -->
-          <div class="col-md-4 fade-in-right">
-            <div class="p-4 bg-white shadow rounded-3 text-center">
-              <div class="mb-3 fs-1 text-primary">
-                <i class="bi bi-cash-coin" style="color: #000;"></i>
-              </div>
-              <h3 class="mb-3">Loyer gratuit en décembre</h3>
-              <p class="text-justify">
-                Dans un esprit de solidarité, ESSOR SOLIDAIRE offre la gratuité du loyer pour le mois de décembre afin de soutenir nos locataires pendant les fêtes de fin d'année et renforcer l'esprit solidaire de notre communauté.
-              </p>
+        </div>
+        <!-- Avantage 3 -->
+        <div class="col-md-4 fade-in-right">
+          <div class="p-4 bg-white shadow rounded-3 text-center">
+            <div class="mb-3 fs-1 text-primary">
+              <i class="bi bi-cash-coin" style="color: #000;"></i>
             </div>
+            <h3 class="mb-3">Loyer gratuit en Décembre</h3>
+            <p class="text-justify">
+              Dans un esprit de solidarité, ESSOR SOLIDAIRE offre la gratuité du loyer pour le mois de Décembre afin de soutenir nos locataires pendant les fêtes de fin d'année et renforcer l'esprit solidaire de notre communauté.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- SECTION : ÉTAPES DU PROCESSUS -->
-  <section id="etapes" class="py-5 bg-light fade-in-up">
+  <section 
+    id="etapes" 
+    class="py-5 bg-light fade-in-up"
+  >
     <div class="container">
       <h2 class="section-title text-center mb-5">Étapes du Processus de Location</h2>
       <div class="row g-4">
@@ -391,24 +500,28 @@
       </div>
     </div>
   </section>
-
-
 </div>
 
 <!-- CONTACT (masqué par défaut) -->
-<section id="contact" class="py-5 fade-in-up" style="display: none;">
+<section 
+  id="contact" 
+  class="py-5 fade-in-up" 
+  style="display: none;"
+>
   <div class="container">
-    <!-- On donne un ID au titre pour le modifier dynamiquement -->
-    <h2 id="contactHeading" class="section-title text-center mb-4">Soumission de demande de location</h2>
-
-    <!-- On donne aussi un ID au paragraphe pour changer son contenu -->
+    <h2 id="contactHeading" class="section-title text-center mb-4">
+      Soumission de demande de location
+    </h2>
     <p class="text-center mb-5" id="contactIntro">
       Vous pouvez soumettre votre demande en utilisant ce formulaire. N'oubliez pas de joindre à votre message tous les documents demandés.
     </p>
-
     <div class="row g-4 justify-content-center">
       <!-- Coordonnées (cachées si non éligible) -->
-      <div class="col-md-4" id="contactCoordinates" style="display: none;">
+      <div 
+        class="col-md-4" 
+        id="contactCoordinates" 
+        style="display: none;"
+      >
         <div class="rounded-3 shadow p-4 h-100 bg-white fade-in">
           <h4 class="mb-3">Coordonnées</h4>
           <div class="d-flex align-items-center mb-3">
@@ -426,10 +539,16 @@
         </div>
       </div>
 
-      <!-- Formulaire de contact (toujours affiché) -->
-      <div class="col-md-6" id="contactForm">
+      <!-- Formulaire de contact -->
+      <div 
+        class="col-md-6" 
+        id="contactForm"
+      >
         <div class="rounded-3 shadow p-4 h-100 bg-white fade-in">
-          <form action="https://formspree.io/f/xkgozywa" method="POST">
+          <form 
+            action="https://formspree.io/f/xkgozywa" 
+            method="POST"
+          >
             <!-- Champ Nom -->
             <div class="mb-3">
               <label for="name" class="form-label">Nom</label>
@@ -448,7 +567,7 @@
 
             <!-- Champ Téléphone -->
             <div class="mb-3">
-              <label for="name" class="form-label">Téléphone</label>
+              <label for="phone" class="form-label">Téléphone</label>
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-telephone"></i></span>
                 <input 
@@ -494,14 +613,17 @@
               </div>
             </div>
     
-            <!-- Nouveau Champ : Joindre un fichier (affiché uniquement si éligible) -->
-            <div class="mb-3" id="fileAttachmentSection">
+            <!-- Champ : Joindre un fichier (si éligible) -->
+            <div 
+              class="mb-3" 
+              id="fileAttachmentSection"
+            >
               <label for="file" class="form-label">Joindre des fichiers</label>
               <input 
                 type="file" 
                 class="form-control" 
                 id="file" 
-                name="attachments[]"
+                name="attachments[]" 
                 multiple
               >
             </div>
@@ -509,18 +631,21 @@
             <!-- Champ caché pour l'objet du mail -->
             <input 
               type="hidden" 
-              name="_subject" 
+              name="_subject"
+              id="formSubject" 
               value="Nouvelle demande de location Essor Solidaire"
             >
     
             <!-- Bouton d’envoi -->
-            <button type="submit" class="btn btn-dark btn-lg w-100">
+            <button 
+              type="submit" 
+              class="btn btn-dark btn-lg w-100"
+            >
               <i class="bi bi-send me-1"></i> Envoyer mon message
             </button>
           </form>
         </div>
       </div>
-      
     </div>
   </div>
 </section>
@@ -531,18 +656,37 @@
     <div class="row align-items-center">
       <!-- Branding & Logo -->
       <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-        <a href="../index.html" class="d-inline-flex align-items-center text-decoration-none">
-          <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
+        <a 
+          href="../index.html" 
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <img 
+            src="../images/logos/logo_noir-sf.png" 
+            class="logo" 
+            alt="Logo Essor Solidaire, agence immobilière en Côte d’Ivoire"
+          >
         </a>
-        <p class="small text-muted mb-0">&copy; 2025 Essor Solidaire. Tous droits réservés.</p>
-        <p class="small text-muted mb-0">Conçu et développé par <a target="_blank" href="https://florianenikebie.netlify.app/" class="text-dark text-decoration-none">Floriane Nikébié</a>.</p>
+        <p class="small text-muted mb-0">
+          &copy; 2025 Essor Solidaire. Tous droits réservés.
+        </p>
+        <p class="small text-muted mb-0">
+          Conçu et développé par 
+          <a 
+            target="_blank" 
+            href="https://florianenikebie.netlify.app/" 
+            class="text-dark text-decoration-none"
+          >
+            Floriane Nikébié
+          </a>.
+        </p>
       </div>
       <!-- Contact Information -->
       <div class="col-md-4 text-center mb-3 mb-md-0">
         <p class="small text-muted mb-0">
           <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
           <i class="bi bi-envelope me-1"></i> tape.auguste@essorsolidaireciv.com <br>
-          <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2</p>
+          <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2
+        </p>
       </div>
       <!-- Social Media Links -->
       <div class="col-md-4 text-center text-md-end">
@@ -568,22 +712,52 @@
   </div>
 </footer>
 
-<!-- Bootstrap 5 JS (CDN) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 5 JS -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+></script>
 
-<!-- Intersection Observer for scroll-triggered animations et criteria Quiz -->
+<!-- Intersection Observer / quiz script -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // --------------------------------------------------
-    // Intersection Observer for fade/slide animations
-    // --------------------------------------------------
-    const animatedEls = document.querySelectorAll(
-      ".fade-in, .fade-in-up, .fade-in-left, .fade-in-right"
-    );
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
-    };
+    /* ... Script d’intersection observer + quiz (inchangé, sauf alt texts / localStorage) ... */
+
+    // ----------------------------------------------------------------
+    // Fonctions utilitaires pour localStorage : éligibilité
+    // ----------------------------------------------------------------
+    function getEligibilityData() {
+      const dataJSON = localStorage.getItem("eligibilityData");
+      if (!dataJSON) return null;
+      try {
+        return JSON.parse(dataJSON);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function setEligibilityData(status) {
+      // status = "yes" ou "no"
+      const data = {
+        eligibility: status,
+        timestamp: Date.now()
+      };
+      localStorage.setItem("eligibilityData", JSON.stringify(data));
+    }
+
+    function isEligibilityDataValid() {
+      const storedData = getEligibilityData();
+      if (!storedData) return false;
+      const currentTime = Date.now();
+      const storedTime = storedData.timestamp;
+      // 12 heures => 12 * 60 * 60 * 1000 
+      // (Ici simplifié en 60 000 ms = 1 minute pour test, ajustez en production)
+      const HOURS_12 =  60 * 1000; 
+      return (currentTime - storedTime) < HOURS_12;
+    }
+
+    // Intersection Observer pour les animations
+    const animatedEls = document.querySelectorAll(".fade-in, .fade-in-up, .fade-in-left, .fade-in-right");
+    const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
     const onScrollObserver = new IntersectionObserver((entries, obs) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
@@ -593,40 +767,12 @@
     }, observerOptions);
     animatedEls.forEach((el) => onScrollObserver.observe(el));
 
-    // --------------------------------------------------
-    // Quiz: Criteria step-by-step
-    // --------------------------------------------------
-    const criteres = [
-      {
-        title: "1 - Stabilité professionnelle et Situation financière",
-        content: "Avez-vous un emploi stable, un revenu régulier et une situation financière saine, sans dettes ni incidents judiciaires ?",
-      },
-      {
-        title: "2 - Historique locatif",
-        content:
-          "Avez-vous un historique de paiements de loyers fiable et sans incidents majeurs ?",
-      },
-      {
-        title: "3 - Entretien du bien et Respect des règles",
-        content:
-          "Êtes-vous prêt à maintenir le bon état du bien immobilier et à respecter les règles de la communauté ?",
-      },
-      {
-        title: "4 - Documents justificatifs",
-        content:
-          "Êtes-vous disposé à fournir les documents nécessaires (fiches de paie, attestations d'emploi, relevés bancaires, etc.) pour vérifier votre stabilité et votre historique ?",
-      },
-    ];
-
-    let currentIndex = 0;
-
-    // Element references
+    // DOM elements
     const quizCriteresContainer = document.getElementById("quiz-criteres");
     const criteriaWizard = document.getElementById("criteriaWizard");
     const questionTitleElem = document.getElementById("questionTitle");
     const questionDescriptionElem = document.getElementById("questionDescription");
     const criterionContainer = document.getElementById("criterionQuestion");
-
     const felicitations = document.getElementById("felicitations");
     const notEligible = document.getElementById("notEligible");
     const detailedCriteres = document.getElementById("detailedCriteres");
@@ -637,84 +783,114 @@
     const contactCoordinates = document.getElementById("contactCoordinates");
     const contactForm = document.getElementById("contactForm");
     const fileAttachmentSection = document.getElementById("fileAttachmentSection");
+    const subjectInput = document.getElementById("formSubject");
 
-    // Function to display the current criterion
+    // Questions
+    const criteres = [
+      {
+        title: "1 - Stabilité professionnelle et Situation financière",
+        content: "Avez-vous un emploi stable, un revenu régulier et une situation financière saine, sans dettes ni incidents judiciaires ?"
+      },
+      {
+        title: "2 - Historique locatif",
+        content: "Avez-vous un historique de paiements de loyers fiable et sans incidents majeurs ?"
+      },
+      {
+        title: "3 - Entretien du bien et Respect des règles",
+        content: "Êtes-vous prêt à maintenir le bon état du bien immobilier et à respecter les règles de la communauté ?"
+      },
+      {
+        title: "4 - Documents justificatifs",
+        content: "Êtes-vous disposé à fournir les documents nécessaires (fiches de paie, attestations d'emploi, relevés bancaires, etc.) ?"
+      }
+    ];
+
+    let currentIndex = 0;
+
     function displayCurrentCriterion() {
       questionTitleElem.textContent = criteres[currentIndex].title;
       questionDescriptionElem.textContent = criteres[currentIndex].content;
       criterionContainer.style.opacity = 1;
     }
 
-    // Display the first criterion on page load
-    displayCurrentCriterion();
-
-    // Global function for the "Oui"/"Non" buttons
     window.handleAnswer = function (isYes) {
-      // Fade out the question
       criterionContainer.style.opacity = 0;
-
       setTimeout(function () {
         if (isYes) {
           currentIndex++;
+          subjectInput.value = "Nouvelle demande de location Essor Solidaire";
           if (currentIndex < criteres.length) {
-            // Show next criterion
             displayCurrentCriterion();
           } else {
-            // Tous les critères OK => Éligible
-            quizCriteresContainer.classList.add("completed");
-            criteriaWizard.classList.add("completed");
-
-            // Afficher félicitations et le reste
-            felicitations.style.display = "block";
-            notEligible.style.display = "none";
-            detailedCriteres.style.display = "block";
-            restOfPage.style.display = "block";
-            contactSection.style.display = "block";
-            contactCoordinates.style.display = "block";
-            contactForm.style.display = "block";
-            fileAttachmentSection.style.display = "block";
-
-            // Modifier le titre et le texte pour “Soumission de demande”
-            contactHeading.textContent = "Soumission de demande de location";
-            contactIntro.textContent =
-              "Vous pouvez soumettre votre demande en utilisant ce formulaire. N'oubliez pas de joindre à votre message tous les documents demandés.";
+            onEligible();
           }
         } else {
-          // Non éligible
-          quizCriteresContainer.classList.add("completed");
-          criteriaWizard.classList.add("completed");
-
-          // Afficher le message d'avertissement et masquer certains éléments
-          felicitations.style.display = "none";
-          notEligible.style.display = "block";
-          detailedCriteres.style.display = "block";
-          restOfPage.style.display = "none";
-          contactSection.style.display = "block";
-          contactCoordinates.style.display = "none";
-          contactForm.style.display = "block";
-          fileAttachmentSection.style.display = "none";
-
-          // Modifier le titre et le texte pour “Contactez-Nous”
-          contactHeading.textContent = "Contactez-Nous";
-          contactIntro.textContent =
-            "N'hésitez pas à remplir le formulaire ci-dessous pour nous contacter.";
+          subjectInput.value = "Nouveau message du site web Essor Solidaire";
+          onNotEligible();
         }
-        // Fade back in if there's another question
         criterionContainer.style.opacity = 1;
       }, 500);
     };
 
-    // --------------------------------------------------
-    // Navbar collapse script
-    // --------------------------------------------------
+    function onEligible() {
+      quizCriteresContainer.classList.add("completed");
+      criteriaWizard.classList.add("completed");
+      setEligibilityData("yes");
+      felicitations.style.display = "block";
+      notEligible.style.display = "none";
+      detailedCriteres.style.display = "block";
+      restOfPage.style.display = "block";
+      contactSection.style.display = "block";
+      contactCoordinates.style.display = "block";
+      contactForm.style.display = "block";
+      fileAttachmentSection.style.display = "block";
+      contactHeading.textContent = "Soumission de demande de location";
+      contactIntro.textContent = "Vous pouvez soumettre votre demande en utilisant ce formulaire. N'oubliez pas de joindre à votre message tous les documents demandés.";
+    }
+
+    function onNotEligible() {
+      quizCriteresContainer.classList.add("completed");
+      criteriaWizard.classList.add("completed");
+      setEligibilityData("no");
+      felicitations.style.display = "none";
+      notEligible.style.display = "block";
+      detailedCriteres.style.display = "block";
+      restOfPage.style.display = "none";
+      contactSection.style.display = "block";
+      contactCoordinates.style.display = "none";
+      contactForm.style.display = "block";
+      fileAttachmentSection.style.display = "none";
+      contactHeading.textContent = "Contactez-Nous";
+      contactIntro.textContent = "N'hésitez pas à remplir le formulaire ci-dessous pour nous contacter.";
+    }
+
+    function initEligibilityFlow() {
+      if (isEligibilityDataValid()) {
+        const storedData = getEligibilityData();
+        if (storedData.eligibility === "yes") {
+          quizCriteresContainer.classList.add("completed");
+          criteriaWizard.classList.add("completed");
+          onEligible();
+        } else {
+          quizCriteresContainer.classList.add("completed");
+          criteriaWizard.classList.add("completed");
+          onNotEligible();
+        }
+      } else {
+        currentIndex = 0;
+        displayCurrentCriterion();
+      }
+    }
+
+    initEligibilityFlow();
+
+    // Auto collapse navbar
     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
     const navCollapse = document.getElementById("mainNavbar");
-
     navLinks.forEach(function (link) {
       link.addEventListener("click", function () {
         const isTogglerVisible =
-          window.getComputedStyle(document.querySelector(".navbar-toggler"))
-            .display !== "none";
+          window.getComputedStyle(document.querySelector(".navbar-toggler")).display !== "none";
         if (isTogglerVisible) {
           const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
           bsCollapse.hide();

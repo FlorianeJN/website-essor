@@ -1,268 +1,365 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Détails du Projet - Construction d'appartements dans la commune de Tiassalé">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essor Solidaire - Détails du Projet</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Essor Solidaire | Résidences KOFFI Kamena - Yaba (Tiassalé)</title>
+    <meta
+      name="description"
+      content="Détails du Projet - Résidences KOFFI Kamena - Yaba à Tiassalé. Un projet moderne pour répondre aux besoins résidentiels de la région."
+    >
+    <meta
+      name="keywords"
+      content="immobilier, gestion immobilière, location, Côte d'Ivoire, Essor Solidaire, logement, investissement immobilier"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="../styles/main.css">
-  <!-- Bootstrap 5 CSS (CDN) -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-  >
+    <!-- Canonical -->
+    <link 
+      rel="canonical" 
+      href="https://www.essorsolidaireciv.com/pages/projet.html" 
+    />
 
-  <!-- Google Fonts - Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
-    rel="stylesheet"
-  >
+    <!-- Open Graph -->
+    <meta property="og:title" content="Essor Solidaire | Projet Résidences KOFFI Kamena - Tiassalé" />
+    <meta property="og:description" content="Découvrez les détails du projet résidentiel KOFFI Kamena - Yaba à Tiassalé, proposé par Essor Solidaire." />
+    <meta property="og:image" content="https://www.essorsolidaireciv.com/images/apart.jpg" />
+    <meta property="og:url" content="https://www.essorsolidaireciv.com/pages/projet.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- Styles internes -->
-  <style>
-    /* Variables CSS pour une gestion facilitée des couleurs */
-    :root {
-      --primary-color: #333;
-      --background-light: #f0f0f0;
-      --background-white: #fff;
-      --accent-color: #007bff;
-      --overlay-light: rgba(0, 0, 0, 0.4);
-    }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Essor Solidaire - Projet KOFFI Kamena - Tiassalé" />
+    <meta name="twitter:description" content="Découvrez les détails du projet résidentiel KOFFI Kamena - Yaba à Tiassalé." />
+    <meta name="twitter:image" content="https://www.essorsolidaireciv.com/images/apart.jpg" />
 
-    /* RESET MINIMAL */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    <!-- JSON-LD (RealEstateAgent) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Essor Solidaire",
+      "url": "https://www.essorsolidaireciv.com/",
+      "logo": "https://www.essorsolidaireciv.com/images/logos/logo_vert-sf.png",
+      "image": "https://www.essorsolidaireciv.com/images/background.jpg",
+      "description": "Services Immobiliers Professionnels et Gestion d’Actifs en Côte d’Ivoire. Nous aidons les travailleurs à trouver un logement sécurisé, confortable et adapté à leurs besoins.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Yopougon Port Bouet 2",
+        "addressLocality": "Abidjan",
+        "addressCountry": "CI"
+      },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+2250702419652",
+        "contactType": "customer service",
+        "email": "contact@essorsolidaireciv.com"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/YourPage",
+        "https://twitter.com/YourProfile",
+        "https://www.instagram.com/YourProfile"
+      ]
     }
+    </script>
 
-    /* Base globale */
-    body {
-      font-family: 'Open Sans', sans-serif;
-      color: var(--primary-color);
-      background-color: var(--background-light);
-      line-height: 1.6;
-    }
+    <!-- Favicon -->
+    <link rel="icon" href="../images/logos/logo_vert-sf.png" />
 
-    /* HERO DU PROJET */
-    header.hero-project {
-      position: relative;
-      background: url("../images/apart.jpg") center/cover no-repeat;
-      min-height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header.hero-project .hero-overlay {
-      background-color: var(--overlay-light);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0; 
-      left: 0;
-    }
-    header.hero-project .hero-content {
-      position: relative;
-      z-index: 2; /* Au-dessus de l’overlay */
-      text-align: center;
-      color: #fff;
-      padding: 2rem;
-    }
-    header.hero-project .hero-content h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    header.hero-project .hero-content p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    header.hero-project .hero-content .btn {
-      border: 2px solid #fff;
-      color: #fff;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    header.hero-project .hero-content .btn:hover {
-      background-color: #fff;
-      color: var(--primary-color);
-    }
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../styles/main.css" />
 
-    /* SECTION PRINCIPALE */
-    main .section-container {
-      background-color: var(--background-white);
-      border-radius: 0.5rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.07);
-      padding: 2rem;
-      margin-top: -3rem; /* Pour remonter un peu sous le hero */
-      margin-bottom: 2rem;
-      position: relative;
-      z-index: 3; /* Au-dessus de l'overlay du hero */
-    }
-    .section-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    /* GALERIE */
-    .project-gallery img {
-      width: 100%;
-      height: auto; /* Respecte le ratio original */
-      border-radius: 0.5rem;
-      object-fit: cover;
-    }
+    <!-- Google Fonts (Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-    /* PIED DE PAGE LÉGER */
-    footer.footer-light {
-      background-color: var(--background-white);
-      padding: 1rem 0;
-      text-align: center;
-      border-top: 1px solid #ddd;
-    }
-    footer.footer-light span {
-      color: #aaa;
-      font-size: 0.9rem;
-    }
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
-    /* RESPONSIVE */
-    @media (max-width: 576px) {
-      header.hero-project .hero-content h1 {
-        font-size: 1.8rem;
+    <style>
+      body {
+        background-color: #f5f5f5; /* Gris clair élégant */
       }
-      header.hero-project .hero-content p {
-        font-size: 1rem;
-      }
-      main .section-container {
-        margin-top: 0; 
-        border-radius: 0; 
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- HERO - Détails du Projet -->
-  <header class="hero-project" role="banner">
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-content">
-      <h1>[Nom_Complet_Descriptif_Projet_1]</h1>
-      <p>Un projet moderne pour répondre aux besoins résidentiels de la région.</p>
-      <a href="../index.html#projets" class="btn btn-lg" role="button">Retour à l'accueil</a>
-    </div>
-  </header>
+    </style>
+  </head>
 
-  <!-- CONTENU PRINCIPAL -->
-  <main>
-    <!-- SECTION DÉTAILS DU PROJET -->
-    <section class="container section-container" aria-labelledby="details-projet">
-      <h2 id="details-projet" class="section-title">Détails du Projet</h2>
-      <div class="row g-4 align-items-center">
-        <div class="col-md-6">
-          <h5> <strong> Description Générale </strong></h5>
-          <p>
-            [Breve_description_du_projet] Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero necessitatibus repellat eum, dolores aliquid dignissimos ea non assumenda reiciendis quo. Reiciendis, laborum. Voluptatem eveniet quaerat facilis nam quos, libero perferendis?
+  <body>
+    <!-- HERO DU PROJET -->
+    <section class="hero-project" style="position: relative; background: url('../images/apart.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+      <div class="hero-project-overlay" style="background-color: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+      <div class="hero-content" style="position: relative; z-index: 2; text-align: center; color: #fff; padding: 2rem;">
+        <h1 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">Résidences KOFFI KAMENA / YABA TIASSALÉ - T1</h1>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Un projet moderne pour répondre aux besoins résidentiels de la région.</p>
+        <a href="../index.html#projets" class="btn btn-lg" role="button" style="border: 2px solid #fff; color: #fff;">Retour à l’accueil</a>
+      </div>
+    </section>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+      <div class="container main-content-wrapper" style="background-color: #fff; border-radius: 0.5rem; box-shadow: 0 0 15px rgba(0, 0, 0, 0.07); position: relative; z-index: 3; margin-top: -3rem; padding: 2rem;">
+        <!-- SECTION : À PROPOS DU PROJET -->
+        <section class="scroll-animation p-4 bg-white shadow rounded-3 h-100 fade-in-up">
+          <h2 class="mb-5 section-title text-center">À propos du projet</h2>
+          <div class="text-justify">
+            <p>
+              <strong>Essor Solidaire</strong> est fier de vous présenter
+              <em>Les Résidences KOFFI Kamena - Yaba</em>, un projet immobilier
+              de haute qualité implanté au cœur de
+              <strong>Tiassalé</strong>, en Côte d'Ivoire. Ce complexe comprend
+              <strong>six appartements de 2 pièces</strong> (d’une superficie
+              d’environ <strong>75 m² chacun</strong>), offrant à la fois confort,
+              sécurité et proximité des services essentiels.
+            </p>
+            <p>
+              Situé à quelques pas du centre commercial, des quartiers résidentiels
+              et d’un lycée privé, le projet propose un cadre de vie agréable pour
+              les familles, les jeunes actifs et toute personne à la recherche d’un
+              logement moderne et bien situé.
+              <strong>La livraison est prévue en juin 2026</strong>, avec des baux
+              d'une <strong>durée minimale de deux ans</strong> pour plus de
+              stabilité. À l’achèvement des travaux, une évaluation indépendante
+              sera réalisée afin d’assurer transparence et valorisation pour les
+              investisseurs et les occupants.
+            </p>
+            <p>
+              <strong>Notre engagement :</strong>
+              Créer un espace de vie moderne et accessible, contribuant ainsi au
+              développement urbain et à l'amélioration de la qualité de vie des
+              habitants de Tiassalé.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION : POINTS FORTS & CARACTÉRISTIQUES TECHNIQUES -->
+        <section class="my-5 scroll-animation fade-in-up">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="p-4 bg-white shadow rounded-3 h-100">
+                <h3 class="mb-3">Avantages</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    <strong>Accessibilité :</strong> proximité des grands axes
+                    et des commerces
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    <strong>Confort :</strong> surfaces optimisées et finitions
+                    soignées
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    <strong>Sécurité :</strong> service de gardiennage
+                    opérationnel en tout temps
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    <strong>Stabilité :</strong> baux d’une durée minimale
+                    de 2 ans
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-4 bg-white shadow rounded-3 h-100">
+                <h3 class="mb-3">Principales Caractéristiques</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    Complexe de 6 appartements de 2 pièces
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    Disponibles à la location à partir de juin 2026
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    Superficie totale de 500 m² (~75 m² par appartement)
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check2-circle"></i>
+                    Durée minimale des contrats de location de 2 ans
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION : GALERIE -->
+        <section class="my-5 project-gallery scroll-animation fade-in-up">
+          <h2 class="section-title">Galerie</h2>
+          <p class="text-center mb-5">
+            Le chantier est en cours : découvrez très bientôt les premières photos !
           </p>
-          <h5> <strong>Caractéristiques Principales
-          </strong> </h5>
-          <ul>
-            <li>[Caracteristique_1] Ex: Appartements de 2 à 4 pièces</li>
-            <li>[Caracteristique_2] Ex: Parkings et espaces verts intégrés</li>
-            <li>[Caracteristique_3] Ex: Matériaux écologiques et durables</li>
-            <li>[Caracteristique_4] Ex: Infrastructures modernes (électricité, fibre optique)</li>
-          </ul>
+          <div class="row g-4">
+            <!-- Placeholder 1 -->
+            <div class="col-md-4">
+              <img
+                src="../images/a-venir.jpg"
+                alt="Visuel du chantier à venir"
+                class="img-fluid rounded-3 shadow"
+              />
+            </div>
+            <!-- Placeholder 2 -->
+            <div class="col-md-4">
+              <img
+                src="../images/a-venir.jpg"
+                alt="Visuel du chantier à venir"
+                class="img-fluid rounded-3 shadow"
+              />
+            </div>
+            <!-- Placeholder 3 -->
+            <div class="col-md-4">
+              <img
+                src="../images/a-venir.jpg"
+                alt="Visuel du chantier à venir"
+                class="img-fluid rounded-3 shadow"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION : CTA -->
+        <section class="my-5 scroll-animation fade-in-up">
+          <div class="p-5 rounded-3 text-center">
+            <h3 class="mb-3">Intéressé par ce projet ?</h3>
+            <p class="mb-4">
+              Les Résidences KOFFI KAMENA vous offrent des logements
+              confortables et de qualité. N’hésitez pas à nous contacter
+              pour en savoir plus sur les opportunités de location.
+            </p>
+            <a href="../index.html#contact" class="btn btn-dark btn-lg">
+              Obtenir plus d’informations
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-4 mt-5 border">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Branding & Logo -->
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <a
+              href="../index.html"
+              class="d-inline-flex align-items-center text-decoration-none"
+            >
+              <img
+                src="../images/logos/logo_noir-sf.png"
+                class="logo"
+                alt="Logo Essor Solidaire, agence immobilière en Côte d’Ivoire"
+              />
+            </a>
+            <p class="small text-muted mb-0">
+              &copy; 2025 Essor Solidaire. Tous droits réservés.
+            </p>
+            <p class="small text-muted mb-0">
+              Conçu et développé par
+              <a
+                target="_blank"
+                href="https://florianenikebie.netlify.app/"
+                class="text-dark text-decoration-none"
+                >Floriane Nikébié</a
+              >.
+            </p>
+          </div>
+          <!-- Contact Information -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <p class="small text-muted mb-0">
+              <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br />
+              <i class="bi bi-envelope me-1"></i>
+              <a
+                href="mailto:contact@essorsolidaireciv.com"
+                class="text-muted text-decoration-none"
+                >contact@essorsolidaireciv.com</a
+              ><br />
+              <i class="bi bi-geo-alt"></i> Abidjan, Yopougon Port Bouet 2
+            </p>
+          </div>
+          <!-- Social Media Links -->
+          <div class="col-md-4 text-center text-md-end">
+            <ul class="list-unstyled d-inline-flex mb-0">
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-twitter fs-5"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-dark" href="#">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img 
-            src="../images/chantier-2.jpg" 
-            alt="Aperçu du chantier du projet à Tiassalé" 
-            class="img-fluid rounded-3"
-          >
-        </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- SECTION GALERIE APPARTEMENTS -->
-<section class="container section-container project-gallery" aria-labelledby="galerie">
-  <h2 id="galerie" class="section-title">Galerie</h2>
-  <p class="text-center mb-4">Découvrez l'intérieur et les finitions de nos appartements d'exception.</p>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <img src="../images/chantier.jpg" alt="Appartement 1">
-    </div>
-    <div class="col-md-4">
-      <img src="../images/chantier.jpg" alt="Appartement 2">
-    </div>
-    <div class="col-md-4">
-      <img src="../images/chantier.jpg" alt="Appartement 3">
-    </div>
-  </div>
-</section>
+    <!-- Bootstrap 5 JS (CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
+    <!-- Script : auto-collapse de la navbar sur mobile -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCollapse = document.querySelector("#mainNavbar");
 
-    <!-- SECTION CONTACT / CTA -->
-    <section class="container section-container" aria-labelledby="contact-projet">
-      <h2 id="contact-projet" class="section-title">Intéressé par ce projet ?</h2>
-      <p class="text-center">
-        Contactez-nous pour plus d’informations, planifier une visite ou discuter 
-        de vos besoins en logement.
-      </p>
-      <div class="text-center">
-        <a href="index.html#contact" class="btn btn-dark btn-lg" role="button">
-          Nous Contacter
-        </a>
-      </div>
-    </section>
-  </main>
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            // Vérifie si le toggler est visible (mode mobile)
+            if (window.getComputedStyle(navbarToggler).display !== "none") {
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false,
+              });
+              bsCollapse.hide();
+            }
+          });
+        });
+      });
+    </script>
 
- 
- <!-- FOOTER -->
- <footer class="bg-white py-4 mt-5 border-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Branding & Logo -->
-      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-        <a href="index.html" class="d-inline-flex align-items-center text-decoration-none">
-          <img src="../images/logos/logo_noir-sf.png" class="logo" alt="logo Essor Solidaire">
-        </a>
-        <p class="small text-muted mb-0">&copy; 2025 Essor Solidaire. Tous droits réservés.</p>
-      </div>
-      <!-- Contact Information -->
-      <div class="col-md-4 text-center mb-3 mb-md-0">
-        <p class="small text-muted mb-0">
-          <i class="bi bi-telephone me-1"></i> +225 07 02 41 96 52<br>
-          <i class="bi bi-envelope me-1"></i> contact@essorsolidaireciv.com
-        </p>
-      </div>
-      <!-- Social Media Links -->
-      <div class="col-md-4 text-center text-md-end">
-        <ul class="list-unstyled d-inline-flex mb-0">
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-twitter fs-5"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-instagram fs-5"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-dark" href="#">
-              <i class="bi bi-facebook fs-5"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-  <!-- Bootstrap 5 JS (CDN) -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
-</body>
+    <!-- Script : animations de défilement (Intersection Observer) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollElements = document.querySelectorAll(".scroll-animation");
+        const observerOptions = { rootMargin: "0px", threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const index = [...scrollElements].indexOf(entry.target);
+              const delay = index * 75;
+              setTimeout(() => {
+                entry.target.classList.add("visible");
+              }, delay);
+              obs.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+        scrollElements.forEach((el) => observer.observe(el));
+      });
+    </script>
+  </body>
 </html>

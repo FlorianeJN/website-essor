@@ -154,7 +154,7 @@ nav.navbar .nav-link.active::after {
 ---------------------------------------------------- */
 .hero-project {
   position: relative;
-  background: url("images/batiment-1.jpg") center/cover no-repeat;
+  background: url("../images/apart.jpg") center/cover no-repeat;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -376,6 +376,7 @@ footer a.text-body-secondary {
   height: auto;
   border-radius: 0.5rem;
   object-fit: cover;
+  
 }
 
 /* ----------------------------------------------------
