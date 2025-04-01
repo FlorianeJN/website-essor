@@ -890,6 +890,25 @@ class="bg-white py-4 mt-5 border"
     }
   }
 
+  function onNotEligible(){
+      // Mark quiz completed
+      quizCriteresContainer.classList.add("completed");
+    criteriaWizard.classList.add("completed");
+    setEligibilityData("no");
+
+    notEligible.style.display = "block";
+    detailedCriteres.style.display = "block";
+    restOfPage.style.display = "none";
+    contactSection.style.display = "block";
+
+    contactHeading.textContent = "Contactez-nous";
+      contactIntro.textContent = 
+        "N'hésitez pas à nous faire part de vos questions via ce formulaire de contact.";
+        fileAttachmentSection.style.display = "none";
+       
+
+  }
+
 
     function initEligibilityFlow() {
       if (isEligibilityDataValid()) {
